@@ -1,5 +1,5 @@
 :root {
-	--primario: #6834a6;
+	--primario: #3452a6;
 	--blanco: #fff;
 	--negro: #000000;
 	--fuentePrincipal: 'Poppins', sans-serif;
@@ -52,19 +52,22 @@ img {
 	margin-bottom: 5rem;
 }
 .header {
-	background-image: url(../img/header_bg.svg);
-	background-repeat: no-repeat;
+	/* background-image: url(../img/header_bg.svg); */
+	background-image: linear-gradient(to right,  var(--blanco) 0%,  var(--negro) 100% );
+	padding: 5rem 0; 
+
+	/* background-repeat: no-repeat;
 	background-position: top right;
-	background-size: 10rem;
-	padding: 5rem 0;
+	background-size: 50rem;
+	padding: 5rem 0; */
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 	.header {
-		background-size: 50rem;
+		background-size: 100rem;
 	}
-}
-@media (min-width: 992px) {
+} */
+/*@media (min-width: 992px) {
 	.header {
 		background-size: 45rem;
 	}
@@ -73,7 +76,7 @@ img {
 	.header {
 		background-size: 110rem;
 	}
-}
+} */
 
 @media (min-width: 768px) {
 	.header__barra {
@@ -167,7 +170,7 @@ img {
 }
 
 .navegacion__link {
-	color: var(--primario);
+	color: var(--blanco);
 }
 
 @media (min-width: 768px) {
