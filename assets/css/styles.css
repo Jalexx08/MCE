@@ -56,7 +56,6 @@ img {
 	margin-bottom: 5rem;
 }
 .header {
-	/* background-image: url(../img/header_bg.svg); */
 	background-image: linear-gradient(
 		to right,
 		var(--blanco) 0%,
@@ -125,11 +124,11 @@ img {
 	background-color: var(--primario);
 	border-radius: 2rem;
 	display: block;
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 	text-align: center;
 	color: var(--blanco);
 	margin-bottom: 3rem;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	transition-property: transform;
 	transition-duration: 0.3s;
 }
@@ -193,16 +192,24 @@ img {
 }
 
 .listado__heading {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	color: var(--primario);
 	margin: 0;
 }
 
 .listado__texto {
 	margin: 0;
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
+@media (min-width: 768px) {
+	.listado__heading {
+		font-size: 3rem;
+	}
 
+	.listado__texto {
+		font-size: 2rem;
+	}
+}
 .section {
 	background-color: var(--primario);
 	padding: 5rem 0;
@@ -216,6 +223,7 @@ img {
 }
 .section__heading {
 	color: var(--terciario);
+	font-size: 3.5rem;
 }
 .section__heading--dark {
 	color: var(--secundario);
@@ -228,12 +236,22 @@ img {
 	padding: 5rem;
 }
 
+.section__imagen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @media (min-width: 768px) {
 	.section__grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 5rem;
 		align-items: center;
+	}
+	.section__heading {
+		color: var(--terciario);
+		font-size: 4rem;
 	}
 }
 
@@ -242,7 +260,7 @@ img {
 }
 
 .mce__heading {
-	font-size: 3rem;
+	font-size: 3.5rem;
 	color: var(--secundario);
 }
 
@@ -292,6 +310,7 @@ img {
 
 .diagonal__heading {
 	color: var(--terciario);
+	font-size: 3.5rem;
 }
 .diagonal__texto {
 	color: var(--blanco);
@@ -309,6 +328,9 @@ img {
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 5rem;
 		align-items: center;
+	}
+	.diagonal__heading {
+		font-size: 4.6rem;
 	}
 }
 
@@ -347,13 +369,15 @@ img {
 
 .app-whatsapp {
 	position: fixed;
-	left: 2.4rem;
 	bottom: 2.5rem;
 	width: 6rem;
 	z-index: 1000;
 	display: none;
-	bottom: 9.5rem;
+	left: 5rem;
+	bottom: 5rem;
 	display: block;
+	transition: all 2s ease;
+	transform: scale(0);
 }
 
 .app-whatsapp i,
