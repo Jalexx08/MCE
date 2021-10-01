@@ -128,7 +128,7 @@ img {
 	text-align: center;
 	color: var(--blanco);
 	margin-bottom: 3rem;
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 	transition-property: transform;
 	transition-duration: 0.3s;
 }
@@ -182,7 +182,7 @@ img {
 .listado__elemento {
 	background-color: var(--blanco);
 	box-shadow: 0px 0px 15px 3px rgb(0 0 0 /0.15);
-	padding: 2rem;
+	padding: 1rem;
 	margin-bottom: 5rem;
 	transition-property: transform;
 	transition-duration: 0.3s;
@@ -199,8 +199,9 @@ img {
 
 .listado__texto {
 	margin: 0;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 }
+
 @media (min-width: 768px) {
 	.listado__heading {
 		font-size: 3rem;
@@ -250,7 +251,6 @@ img {
 		align-items: center;
 	}
 	.section__heading {
-		color: var(--terciario);
 		font-size: 4rem;
 	}
 }
@@ -364,7 +364,14 @@ img {
 	color: var(--blanco);
 	text-align: center;
 	margin: 0;
-	padding: 1rem 0;
+	padding: 2rem 0;
+	font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+	.footer__copyright {
+		font-size: 2rem;
+	}
 }
 
 .app-whatsapp {
@@ -380,18 +387,28 @@ img {
 	transform: scale(0);
 }
 
+.app-whatsapp i {
+	background-color: #25d366;
+}
+
+.header__boton > i.fa-phone-alt {
+	font-size: 1.5rem;
+	padding: 0;
+}
+
+.app-whatsapp i {
+	font-size: 2.5rem;
+}
 .app-whatsapp i,
 .header__boton i {
 	color: #ffffff;
-	background-color: #25d366;
 	border-radius: 1rem;
 	padding: 0.6rem;
-	font-size: 5rem;
 }
 
 .boton-arriba {
-	width: 6rem;
-	height: 6rem;
+	width: 3.5rem;
+	height: 3.5rem;
 	background-color: var(--terciario);
 	display: flex;
 	justify-content: center;
@@ -410,4 +427,44 @@ img {
 
 .boton-arriba:hover {
 	transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+	.header__boton > i.fa-phone-alt {
+		font-size: 1.5rem;
+		padding: 0;
+	}
+
+	.app-whatsapp i {
+		font-size: 5rem;
+	}
+	.app-whatsapp i,
+	.header__boton i {
+		color: #ffffff;
+		border-radius: 1rem;
+		padding: 0.6rem;
+	}
+
+	.boton-arriba {
+		width: 6rem;
+		height: 6rem;
+		background-color: var(--terciario);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: var(--blanco);
+		border-radius: 50%;
+		font-size: 2rem;
+		position: fixed;
+		right: 5rem;
+		bottom: 5rem;
+		cursor: pointer;
+		border: 0.4rem solid transparent;
+		transition: all 2s ease;
+		transform: scale(0);
+	}
+
+	.boton-arriba:hover {
+		transform: scale(1.1);
+	}
 }
